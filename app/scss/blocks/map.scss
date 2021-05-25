@@ -1,0 +1,16 @@
+.map{
+  background-color: $white;
+}
+
+.map__title{
+  font-size: 30px;
+  font-weight: 600;
+  color: $black;
+  margin-bottom: 45px;
+  text-align: center;
+  padding-top: 143px;
+}
+
+.map__pic{
+  object-fit: cover;
+}

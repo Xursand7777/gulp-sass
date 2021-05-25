@@ -1,4 +1,5 @@
 @import "variables"; //пишем переменные
+@import "mixins";
 
 @import "reset"; //сборс стилей
 @import "fonts"; //подключаем шрифты (локально)
@@ -8,4 +9,9 @@
 //подключаем БЭМ блоки
 @import "blocks/header";
 @import "blocks/container";
-@import "blocks/content";
+@import "blocks/service";
+@import "blocks/cards";
+@import "blocks/benefits";
+@import "blocks/number";
+@import "blocks/map";
+@import "blocks/rent";
