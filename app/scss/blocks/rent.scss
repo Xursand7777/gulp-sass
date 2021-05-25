@@ -1,0 +1,48 @@
+.rent{
+  background-color: $white;
+  padding-top: 120px;
+}
+
+.rent__location{
+  display: flex;
+  justify-content: space-between;
+}
+
+.rent__description{
+  width: 50%;
+  margin-right: auto;
+}
+.rent__title{
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 13px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.rent__text{
+  font-size: 15px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.rent__button{
+  //display: block;
+  color: $white;
+  padding: 21px 30px;
+  background-color: $secondary;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.rent__pic{
+  transition: transform .2s ease-in-out;
+}
+
+.rent__pic:hover{
+  -webkit-box-shadow: -32px 10px 0px 0px rgba(241,242,245,1);
+  -moz-box-shadow: -32px 10px 0px 0px rgba(241,242,245,1);
+   box-shadow: -32px 10px 0px 0px rgba(241,242,245,1);
+   transform: translate(15px, 15px);
+}

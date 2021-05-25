@@ -1,0 +1,48 @@
+.warehouse{
+  background-color: $secondary;
+  //position: relative;
+}
+
+.warehouse__content{
+  display: flex;
+
+
+}
+
+.warehouse__description{
+  margin-right: 87px;
+  padding-top: 205px;
+}
+
+.warehouse__title{
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 13px;
+  color: $white;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.warehouse__text{
+  font-size: 15px;
+  color: $white;
+  margin-bottom: 40px;
+}
+
+.warehouse__button{
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 21px 30px;
+  text-decoration: none;
+  color: $white;
+  border: 2px solid $white;
+}
+
+.warehouse__location{
+}
+
+.warehouse__pic{
+
+}
