@@ -1,23 +1,17 @@
 .warehouse{
   background-color: $secondary;
-  //position: relative;
-}
-
-.warehouse__content{
-  display: flex;
-
-
+  position: relative;
 }
 
 .warehouse__description{
-  margin-right: 87px;
-  padding-top: 205px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  max-width: 430px
 }
 
 .warehouse__title{
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 13px;
+  @include font(30px, 36px);
+  letter-spacing: 11px;
   color: $white;
   text-transform: uppercase;
   margin-bottom: 30px;
@@ -25,6 +19,7 @@
 
 .warehouse__text{
   font-size: 15px;
+  line-height: 16px;
   color: $white;
   margin-bottom: 40px;
 }
@@ -38,11 +33,19 @@
   text-decoration: none;
   color: $white;
   border: 2px solid $white;
+  max-width: 277px;
+  text-transform: uppercase;
 }
 
 .warehouse__location{
 }
 
 .warehouse__pic{
-
+  position: absolute;
+  bottom: -120px;
+  right: 0;
+  width: 50vw;
+  top: 120px;
+  height: 570px;
+  object-fit: cover;
 }

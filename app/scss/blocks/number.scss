@@ -1,12 +1,42 @@
 .numbers{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
   grid-gap: 93px;
+  counter-reset: heading-1 heading-2; /* Инициируем счетчик */
 }
 
 .numbers__item{
   display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.numbers__item:before{
+  counter-increment: heading-1; /* Указываем идентификатор счетчика */
+  content: "0"counter(heading-1);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 3px;
+  background-color: $primary;
+  padding: 10px 14px;
+  margin-right: 40px;
+  width: 51px;
+  height: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.numbers__item:after{
+  counter-increment: heading-2;
+  content: counter(heading-2);
+  font-size: 80px;
+  font-weight: 600;
+  opacity: .1;
+  position: absolute;
+  left: 90px;
+  top: -50px;
 }
 
 .number__count{
@@ -19,9 +49,7 @@
   margin-right: 40px;
 }
 
-.number__description{
-  margin-top: -80px;
-}
+
 .number__top{
   font-size: 80px;
   font-weight: 600;
@@ -31,5 +59,6 @@
 .number__text{
   font-size: 16px;
   font-weight: 600;
+  line-height: 20px;
   color: $secondary;
 }
