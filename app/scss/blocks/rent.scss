@@ -1,12 +1,29 @@
 .rent{
   background-color: $white;
   padding-top: 120px;
+  @include media($mobile) {
+    padding-top: 0;
+  }
 }
 
 .rent__location{
   display: grid;
   grid-template-columns: 430px 1fr;
   grid-column-gap: 120px;
+
+  @include media($mobile) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.rent__description{
+  @include media($mobile){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .rent__title{
@@ -15,12 +32,24 @@
   letter-spacing: 13px;
   text-transform: uppercase;
   margin-bottom: 25px;
+
+  @include media($mobile) {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }
 
 .rent__text{
   font-size: 15px;
   line-height: 20px;
   margin-bottom: 40px;
+
+  @include media($mobile) {
+    text-align: center;
+    max-width: 277px;
+    margin-bottom: 30px;
+  }
 }
 
 .rent__button{
@@ -32,10 +61,18 @@
   text-decoration: none;
   font-size: 12px;
   letter-spacing: 2px;
+
+  @include media($mobile) {
+    display: block;
+    padding: 21px 48px;
+    margin-bottom: 102px;
+  }
 }
 
 .rent__caption{
   position: relative;
+
+
 }
 
 .rent__pic{
@@ -45,6 +82,9 @@
   object-fit: cover;
   position: relative;
   z-index: 1;
+  @include media($mobile) {
+    margin-bottom: 18px;
+  }
 }
 
 .rent__caption:after{
@@ -55,4 +95,8 @@
   right: 60px;
   bottom: 66px;
   background-color: #000;
+
+  @include media($mobile) {
+    display: none;
+  }
 }

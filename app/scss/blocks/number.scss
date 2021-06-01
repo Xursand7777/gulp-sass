@@ -3,6 +3,10 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 93px;
   counter-reset: heading-1 heading-2; /* Инициируем счетчик */
+
+  @include media($mobile) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .numbers__item{

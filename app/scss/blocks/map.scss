@@ -9,8 +9,19 @@
   margin-bottom: 45px;
   text-align: center;
   padding-top: 143px;
+
+  @include media($mobile){
+    padding-top: 60px;
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
 }
 
 .map__pic{
   object-fit: cover;
+  @include media($mobile) {
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 40px;
+  }
 }

@@ -3,18 +3,36 @@
   position: relative;
 }
 
+.warehouse__content{
+  @include media($mobile) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
 .warehouse__description{
   padding-top: 120px;
   padding-bottom: 120px;
-  max-width: 430px
+  max-width: 430px;
+
+  @include media($mobile) {
+    padding-top: 20px;
+    padding-bottom: 35px;
+  }
 }
 
 .warehouse__title{
   @include font(30px, 36px);
+  font-weight: 700;
   letter-spacing: 11px;
   color: $white;
   text-transform: uppercase;
   margin-bottom: 30px;
+
+  @include media($mobile) {
+    font-size: 18px;
+    text-align: center;
+  }
 }
 
 .warehouse__text{
@@ -22,10 +40,15 @@
   line-height: 16px;
   color: $white;
   margin-bottom: 40px;
+
+  @include media($mobile){
+    text-align: center;
+    line-height: 30px;
+  }
 }
 
 .warehouse__button{
-  display: block;
+  display: inline-block;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -35,6 +58,12 @@
   border: 2px solid $white;
   max-width: 277px;
   text-transform: uppercase;
+
+  @include media($mobile) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .warehouse__location{
@@ -48,4 +77,12 @@
   top: 120px;
   height: 570px;
   object-fit: cover;
+
+  @include media($mobile) {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-top: -42px;
+
+  }
 }
