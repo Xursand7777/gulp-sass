@@ -1,11 +1,15 @@
 .numbers{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 93px;
+  grid-gap: 99px;
   counter-reset: heading-1 heading-2; /* Инициируем счетчик */
+  padding-left: 100px;
+  padding-right: 20px;
 
   @include media($mobile) {
     grid-template-columns: 1fr;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 

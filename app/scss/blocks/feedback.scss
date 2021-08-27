@@ -47,6 +47,23 @@
   }
 }
 
+
+
+.form__item::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: pink;
+}
+.form__item::-moz-placeholder { /* Firefox 19+ */
+  color: pink;
+  opacity: 1;
+}
+.form__item:-ms-input-placeholder { /* IE 10+ */
+  color: pink;
+}
+.form__item:-moz-placeholder { /* Firefox 18- */
+  color: pink;
+  opacity: 1;
+}
+
 .form__item--btn{
   width: 249px;
   height: 55px;

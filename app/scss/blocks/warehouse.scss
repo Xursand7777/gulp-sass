@@ -11,7 +11,7 @@
 }
 
 .warehouse__description{
-  padding-top: 120px;
+  padding-top: 332px;
   padding-bottom: 120px;
   max-width: 430px;
 
@@ -22,12 +22,13 @@
 }
 
 .warehouse__title{
-  @include font(30px, 36px);
+  @include font(27px, 36px);
   font-weight: 700;
   letter-spacing: 11px;
   color: $white;
   text-transform: uppercase;
   margin-bottom: 30px;
+  margin-left: 33px;
 
   @include media($mobile) {
     font-size: 18px;
@@ -39,7 +40,8 @@
   font-size: 15px;
   line-height: 16px;
   color: $white;
-  margin-bottom: 40px;
+  margin-bottom: 22px;
+  margin-left: 33px;
 
   @include media($mobile){
     text-align: center;
@@ -52,12 +54,14 @@
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 2px;
-  padding: 21px 30px;
+  padding: 21px 33px;
   text-decoration: none;
   color: $white;
   border: 2px solid $white;
   max-width: 277px;
   text-transform: uppercase;
+  margin-left: 30px;
+
 
   @include media($mobile) {
     display: block;
@@ -74,7 +78,7 @@
   bottom: -120px;
   right: 0;
   width: 50vw;
-  top: 120px;
+  top: 259px;
   height: 570px;
   object-fit: cover;
 

@@ -10,8 +10,9 @@
 
 
 .menu-burger__header{
-
+  display: none;
    @include media($mobile) {
+      display: block;
       width: 32px;
       height: 32px;
       border: 0;
@@ -41,9 +42,7 @@
 }
 
 .nav{
-  @include media($mobile){
-    display: none;
-  }
+
 }
 
 .nav__list{
@@ -54,16 +53,18 @@
 .header__container {
   display: flex;
   align-items: center;
+
 }
 
 .header__top{
-  padding-top: 40px;
+  padding-top: 29px;
   padding-bottom: 40px;
   margin-bottom: 80px;
 }
 
 .header__nav{
   flex-grow: 1;
+
 }
 
 .nav__destination{
@@ -121,7 +122,7 @@
   object-fit: cover;
   height: 506px;
   width: 50%;
-  top: 128px;
+  top: 176px;
 
   @include media($mobile){
     position: absolute;
@@ -137,9 +138,6 @@
 }
 
 .header__slide{
-//  @include media{$mobile}{
-//  text-align: center;
-//}
 
   &:after{
     content: '';
@@ -178,7 +176,7 @@
   letter-spacing: 4px;
   text-transform: uppercase;
   color: #fff;
-  margin-bottom: 50px;
+  margin-bottom: 104px;
 
   @include media($mobile){
     font-size: 25px;
@@ -232,7 +230,7 @@
 }
 
 .btn{
-  padding: 19px 50px;
+  padding: 19px 59px;
   line-height: 22px;
   font-size: 18px;
   font-weight: 700;
@@ -256,6 +254,22 @@
 .nav__list{
   display: flex;
   list-style-type: none;
+  @include media($mobile) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left:0;
+    bottom: 0;
+    z-index: 2;
+    background-color: $secondary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    transform: translateX(-100%);
+    transition: transform .2s ease-in-out;
+  }
 }
 
 .nav__link{
@@ -268,12 +282,22 @@
   line-height: 24px;
   padding-left: 15px;
   padding-right: 15px;
+
+  @include media($mobile){
+    margin-bottom: 39px;
+  }
 }
 
 
 //logo
 .logo{
   margin-right: 63px;
+  @include media($mobile) {
+    position: absolute;
+    z-index: 2;
+    left: 16px;
+    top: 30px;
+  }
 }
 
 .logo__icon{
@@ -287,7 +311,6 @@
   @include media($mobile){
     z-index: 2;
     background-color: rgba(#000, .2);
-
   }
 
 }

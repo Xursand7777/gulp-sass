@@ -61,11 +61,15 @@
 }
 
 
-.image__pic{
+.card__pic{
   vertical-align: top;
   width: 100%;
   object-fit: cover;
   height: 345px;
+
+  @include media($mobile) {
+   height: 268px;
+  }
 }
 
 .card__description{
@@ -79,6 +83,7 @@
 
   @include media($mobile) {
     font-size: 16px;
+    padding: 20px 8px;
+    text-align: center;
   }
 }
-
